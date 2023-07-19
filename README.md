@@ -4,7 +4,7 @@ CoreWarsのデータパックです。
 
 ## 使い方
 ### 準備
-①'/function corewars:corewars/settings/set-items'を実行します。
+① '/function corewars:corewars/settings/set-items' を実行します。
 
 ②そのコマンドで取得したアーマースタンドを、任意の場所に配置します(場所については後で述べます)。
 
@@ -16,4 +16,4 @@ CoreWarsのデータパックです。
 #### チーム準備
 '/function corewars:corewars/command/auto-team' を実行すると自動的にチームが割り振られます。
 #### ゲーム開始
-'/function corewars:corewars/command/start'を実行します。
+'/function corewars:corewars/command/start' を実行します。
