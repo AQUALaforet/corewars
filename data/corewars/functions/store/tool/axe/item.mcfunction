@@ -1,0 +1,15 @@
+item replace entity @a[scores={page=39}] enderchest.18 with wooden_axe{display:{Lore:['{"text":"[Iron:20]","color":"white","italic":false}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;103434699,1357989734,-1206783050,1221300553],Slot:"mainhand"}]} 1
+item replace entity @a[scores={page=39}] enderchest.19 with stone_axe{display:{Lore:['{"text":"[Gold:20]","color":"gold","italic":false}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;103434699,1357989734,-1206783050,1221300553],Slot:"mainhand"}]} 1
+item replace entity @a[scores={page=39}] enderchest.20 with iron_axe{display:{Lore:['{"text":"[Diamond:20]","color":"aqua","italic":false}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;103434699,1357989734,-1206783050,1221300553],Slot:"mainhand"}]} 1
+item replace entity @a[scores={page=39}] enderchest.21 with diamond_axe{display:{Lore:['{"text":"[Emerald:20]","color":"green","italic":false}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;103434699,1357989734,-1206783050,1221300553],Slot:"mainhand"}]} 1
+item replace entity @a[scores={page=39}] enderchest.22 with netherite_axe{display:{Lore:['{"text":"[Netherite:20]","color":"dark_gray","italic":false}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;103434699,1357989734,-1206783050,1221300553],Slot:"mainhand"}]} 1
+item replace entity @a[scores={page=39}] enderchest.23 with black_stained_glass_pane{display:{Name:'{"text":""}'}} 1
+item replace entity @a[scores={page=39}] enderchest.24 with black_stained_glass_pane{display:{Name:'{"text":""}'}} 1
+item replace entity @a[scores={page=39}] enderchest.25 with black_stained_glass_pane{display:{Name:'{"text":""}'}} 1
+item replace entity @a[scores={page=39}] enderchest.26 with black_stained_glass_pane{display:{Name:'{"text":""}'}} 1
+
+execute positioned as @a store result score @p tool_axe_1 run clear @p wooden_axe{display:{Lore:['{"text":"[Iron:20]","color":"white","italic":false}']}} 1
+execute positioned as @a store result score @p tool_axe_2 run clear @p stone_axe{display:{Lore:['{"text":"[Gold:20]","color":"gold","italic":false}']}} 1
+execute positioned as @a store result score @p tool_axe_3 run clear @p iron_axe{display:{Lore:['{"text":"[Diamond:20]","color":"aqua","italic":false}']}} 1
+execute positioned as @a store result score @p tool_axe_4 run clear @p diamond_axe{display:{Lore:['{"text":"[Emerald:20]","color":"green","italic":false}']}} 1
+execute positioned as @a store result score @p tool_axe_5 run clear @p netherite_axe{display:{Lore:['{"text":"[Netherite:20]","color":"dark_gray","italic":false}']}} 1
