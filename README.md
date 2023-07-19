@@ -1,0 +1,2 @@
+# CoreWars
+Minecraft CoreWars plugin.
