@@ -1,0 +1,1 @@
+execute positioned as @e[type=armor_stand,tag=aqua_core] if score Aqua-Core hp matches 1.. unless block ~ ~ ~ light_blue_stained_glass unless block ~ ~ ~ netherite_block run execute positioned as @a[team=aqua] run playsound block.note_block.harp block @p[team=aqua] ~ ~ ~ 1 1.6
