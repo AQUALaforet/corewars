@@ -30,8 +30,8 @@ CoreWarsのデータパックです。
 ##### 設定リセット
 `/function corewars:corewars/settings/reset-score`を実行します。
 
-##アーマースタンドの位置
-#####コア
+## アーマースタンドの位置
+##### コア
 Blue Core なとの {color} Core は、各チームのコアを設置する箇所に配置してください。
 
 アーマースタンドの削除:`/kill @e[tag=blue_core]`のように`/kill @e[tag={color}_core}`と入力してください。
