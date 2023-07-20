@@ -2,6 +2,7 @@
 Minecraft CoreWars datapack.
 CoreWarsのデータパックです。
 
+
 ## 使い方
 ### 準備
 ①`/function corewars:corewars/settings/set-items`を実行します。
@@ -22,6 +23,9 @@ CoreWarsのデータパックです。
 #### ゲーム強制停止
 `/function corewars:corewars/command/stop`を実行します。
 
+
 ### その他コマンド
+##### フィールドリセット
+`/function corewars:corewars/command/reset-field`を実行します。
 ##### 設定リセット
 `/function corewars:corewars/settings/reset-score`を実行します。
