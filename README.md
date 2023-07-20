@@ -15,5 +15,13 @@ CoreWarsのデータパックです。
 ### 動作方法
 #### チーム準備
 `/function corewars:corewars/command/auto-team`を実行すると自動的にチームが割り振られます。
+
+また、`/team join {team} {player}`で任意のチームに割り振れます。
 #### ゲーム開始
 `/function corewars:corewars/command/start`を実行します。
+#### ゲーム強制停止
+`/function corewars:corewars/command/stop`を実行します。
+
+### その他コマンド
+##### 設定リセット
+`/function corewars:corewars/settings/reset-score`を実行します。
