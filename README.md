@@ -36,11 +36,11 @@ Iron Generator は、各チームの陣地にそれぞれ3~6個程度配置し�
 
 削除: `/kill @e[tag=iron_generator]`
 
-Gold . Diamond Generator は、mid近くの島などに配置してください。
+Gold ・ Diamond Generator は、mid近くの島などに配置してください。
 
 削除: `/kill @e[tag=gold_generator]` または `/kill @e[tag=diamond_generator]`
 
-Emerald . Netherite Generator は、mid中央の島などに配置してください。
+Emerald ・ Netherite Generator は、mid中央の島などに配置してください。
 
 削除: `/kill @e[tag=emerald_generator]` または `/kill @e[tag=netherite_generator]`
 
