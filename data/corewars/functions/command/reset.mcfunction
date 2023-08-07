@@ -353,6 +353,8 @@ scoreboard objectives add materials dummy
 
 scoreboard objectives add respawn_time dummy
 
+scoreboard objectives add y_rotate dummy
+
 bossbar add phase ""
 bossbar set phase color white
 bossbar set autocore name "Auto Core damage"
