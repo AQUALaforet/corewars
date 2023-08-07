@@ -138,14 +138,7 @@ function corewars:system/generator/diamond_generator
 function corewars:system/generator/emerald_generator
 function corewars:system/generator/netherite_generator
 
-execute if score phase game matches 2..10 run function corewars:system/core/blue
-execute if score phase game matches 2..10 run function corewars:system/core/red
-execute if score phase game matches 2..10 run function corewars:system/core/green
-execute if score phase game matches 2..10 run function corewars:system/core/yellow
-execute if score phase game matches 2..10 run function corewars:system/core/aqua
-execute if score phase game matches 2..10 run function corewars:system/core/pink
-execute if score phase game matches 2..10 run function corewars:system/core/white
-execute if score phase game matches 2..10 run function corewars:system/core/gray
+execute if score phase game matches 2..10 run function corewars:system/main_command/core_phase
 
 execute if score old_mode settings matches 0 run execute positioned as @a run attribute @p generic.attack_speed base set 4
 execute if score old_mode settings matches 1 run execute positioned as @a run attribute @p generic.attack_speed base set 32
@@ -173,14 +166,7 @@ execute if score game game matches 0 run effect give @a weakness 1 50 true
 bossbar set autocore players @a
 
 clear @a[tag=!player] leather_helmet
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},team=blue,scores={inv=0}] armor.head with leather_helmet{display:{color:255},HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},team=red,scores={inv=0}] armor.head with leather_helmet{display:{color:16711680},HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},team=green,scores={inv=0}] armor.head with leather_helmet{display:{color:32768},HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},team=yellow,scores={inv=0}] armor.head with leather_helmet{display:{color:16776960},HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},team=white,scores={inv=0}] armor.head with leather_helmet{display:{color:16777215},HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},team=gray,scores={inv=0}] armor.head with leather_helmet{display:{color:8421504},HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},team=pink,scores={inv=0}] armor.head with leather_helmet{display:{color:16738740},HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},team=aqua,scores={inv=0}] armor.head with leather_helmet{display:{color:65535},HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+execute as @a[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]},scores={inv=0}] if score phase game matches 1..10 run function corewars:system/main_command/leather_helmet
 clear @a[scores={inv=1..}] leather_helmet
 
 bossbar set phase players @a
@@ -293,22 +279,7 @@ execute if score gray upgrade_health matches 3 run execute positioned as @a[team
 execute if score pink upgrade_health matches 3 run execute positioned as @a[team=pink] run attribute @p[team=pink] generic.max_health base set 32
 execute if score aqua upgrade_health matches 3 run execute positioned as @a[team=aqua] run attribute @p[team=aqua] generic.max_health base set 32
 
-execute if score blue upgrade_resistance matches 0 run effect clear @a[team=blue] resistance
-execute if score red upgrade_resistance matches 0 run effect clear @a[team=red] resistance
-execute if score green upgrade_resistance matches 0 run effect clear @a[team=green] resistance
-execute if score yellow upgrade_resistance matches 0 run effect clear @a[team=yellow] resistance
-execute if score white upgrade_resistance matches 0 run effect clear @a[team=white] resistance
-execute if score gray upgrade_resistance matches 0 run effect clear @a[team=gray] resistance
-execute if score aqua upgrade_resistance matches 0 run effect clear @a[team=aqua] resistance
-execute if score pink upgrade_resistance matches 0 run effect clear @a[team=pink] resistance
-execute if score blue upgrade_resistance matches 1 run effect give @a[team=blue] resistance infinite 0 true
-execute if score red upgrade_resistance matches 1 run effect give @a[team=red] resistance infinite 0 true
-execute if score green upgrade_resistance matches 1 run effect give @a[team=green] resistance infinite 0 true
-execute if score yellow upgrade_resistance matches 1 run effect give @a[team=yellow] resistance infinite 0 true
-execute if score white upgrade_resistance matches 1 run effect give @a[team=white] resistance infinite 0 true
-execute if score gray upgrade_resistance matches 1 run effect give @a[team=gray] resistance infinite 0 true
-execute if score aqua upgrade_resistance matches 1 run effect give @a[team=aqua] resistance infinite 0 true
-execute if score pink upgrade_resistance matches 1 run effect give @a[team=pink] resistance infinite 0 true
+execute as @a if score phase game matches 3..10 run function corewars:system/main_command/upgrade_resistance
 
 execute as @a store result score @s y_rotate run data get entity @s Pos[1] 1.0
 

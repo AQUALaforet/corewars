@@ -1,0 +1,16 @@
+execute if score blue upgrade_resistance matches 0 run effect clear @s[team=blue] resistance
+execute if score red upgrade_resistance matches 0 run effect clear @s[team=red] resistance
+execute if score green upgrade_resistance matches 0 run effect clear @s[team=green] resistance
+execute if score yellow upgrade_resistance matches 0 run effect clear @s[team=yellow] resistance
+execute if score white upgrade_resistance matches 0 run effect clear @s[team=white] resistance
+execute if score gray upgrade_resistance matches 0 run effect clear @s[team=gray] resistance
+execute if score aqua upgrade_resistance matches 0 run effect clear @s[team=aqua] resistance
+execute if score pink upgrade_resistance matches 0 run effect clear @s[team=pink] resistance
+execute if score blue upgrade_resistance matches 1 run effect give @s[team=blue] resistance infinite 0 true
+execute if score red upgrade_resistance matches 1 run effect give @s[team=red] resistance infinite 0 true
+execute if score green upgrade_resistance matches 1 run effect give @s[team=green] resistance infinite 0 true
+execute if score yellow upgrade_resistance matches 1 run effect give @s[team=yellow] resistance infinite 0 true
+execute if score white upgrade_resistance matches 1 run effect give @s[team=white] resistance infinite 0 true
+execute if score gray upgrade_resistance matches 1 run effect give @s[team=gray] resistance infinite 0 true
+execute if score aqua upgrade_resistance matches 1 run effect give @s[team=aqua] resistance infinite 0 true
+execute if score pink upgrade_resistance matches 1 run effect give @s[team=pink] resistance infinite 0 true
