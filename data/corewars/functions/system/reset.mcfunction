@@ -356,7 +356,7 @@ scoreboard objectives add respawn_time dummy
 scoreboard objectives add y_rotate dummy
 
 bossbar add phase ""
-bossbar set phase color white
+bossbar set phase color blue
 bossbar set autocore name "Auto Core damage"
 bossbar set autocore color red
 bossbar set autocore max 900

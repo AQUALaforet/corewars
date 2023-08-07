@@ -312,4 +312,4 @@ execute if score pink upgrade_resistance matches 1 run effect give @a[team=pink]
 
 execute as @a store result score @s y_rotate run data get entity @s Pos[1] 1.0
 
-kill @a[tag=player,scores={y_rotate=..-128}]
+kill @a[tag=player,scores={y_rotate=..-64}]
