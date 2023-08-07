@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "corewars:corewars/reset"
+        "corewars:system/reset"
     ]
 }

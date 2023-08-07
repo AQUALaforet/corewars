@@ -117,3 +117,12 @@ scoreboard players set white upgrade_health 0
 scoreboard players set gray upgrade_health 0
 scoreboard players set pink upgrade_health 0
 scoreboard players set aqua upgrade_health 0
+
+scoreboard players set blue upgrade_resistance 0
+scoreboard players set red upgrade_resistance 0
+scoreboard players set green upgrade_resistance 0
+scoreboard players set yellow upgrade_resistance 0
+scoreboard players set white upgrade_resistance 0
+scoreboard players set gray upgrade_resistance 0
+scoreboard players set pink upgrade_resistance 0
+scoreboard players set aqua upgrade_resistance 0
