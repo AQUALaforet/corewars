@@ -45,9 +45,9 @@ Emerald ・ Netherite Generator は、mid中央の島などに配置してくだ
 削除: `/kill @e[tag=emerald_generator]` または `/kill @e[tag=netherite_generator]`
 
 ##### コア
-Blue Core なとの {color} Core は、各チームのコアを設置する箇所に配置してください。
+Blue Core などの {color} Core は、各チームのコアを設置する箇所に配置してください。
 
-削除: `/kill @e[tag=blue_core]`のように`/kill @e[tag={color}_core}`と入力してください。
+削除: `/kill @e[tag=blue_core]`のように`/kill @e[tag={color}_core]`と入力してください。
 
 ##### スポーン
 Blue Spawn などの {color} Spawn は、各チームのプレイヤーがスポーンする箇所に配置してください。
