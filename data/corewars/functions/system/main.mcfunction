@@ -99,20 +99,9 @@ execute if entity @a[scores={page=44}] run function corewars:store/potion/potion
 execute if entity @a[scores={page=44}] run function corewars:store/potion/potion/buy
 execute if entity @a[scores={page=45}] run function corewars:store/potion/splash/item
 execute if entity @a[scores={page=45}] run function corewars:store/potion/splash/buy
-execute if entity @a[scores={page=46}] run function corewars:store/item/home/item
-execute if entity @a[scores={page=46}] run function corewars:store/item/home/buy
-execute if entity @a[scores={page=47}] run function corewars:store/item/convert/home/item
-execute if entity @a[scores={page=47}] run function corewars:store/item/convert/home/buy
-execute if entity @a[scores={page=48}] run function corewars:store/item/convert/iron/item
-execute if entity @a[scores={page=48}] run function corewars:store/item/convert/iron/buy
-execute if entity @a[scores={page=49}] run function corewars:store/item/convert/gold/item
-execute if entity @a[scores={page=49}] run function corewars:store/item/convert/gold/buy
-execute if entity @a[scores={page=50}] run function corewars:store/item/convert/diamond/item
-execute if entity @a[scores={page=50}] run function corewars:store/item/convert/diamond/buy
-execute if entity @a[scores={page=51}] run function corewars:store/item/convert/emerald/item
-execute if entity @a[scores={page=51}] run function corewars:store/item/convert/emerald/buy
-execute if entity @a[scores={page=52}] run function corewars:store/item/convert/netherite/item
-execute if entity @a[scores={page=52}] run function corewars:store/item/convert/netherite/buy
+execute if entity @a[scores={page=46}] run function corewars:store/item/item
+execute if entity @a[scores={page=46}] run function corewars:store/item/buy
+
 execute if entity @a[scores={page=53}] run function corewars:store/upgrade/item
 execute if entity @a[scores={page=53}] run function corewars:store/upgrade/buy
 #enderchest
@@ -208,18 +197,7 @@ execute store result score gray player if entity @a[team=gray]
 execute store result score pink player if entity @a[team=pink]
 execute store result score aqua player if entity @a[team=aqua]
 
-
-execute if entity @p[nbt={Inventory:[{id:"minecraft:iron_ingot",Slot:9b}]}] run function corewars:system/import_iron
-execute if entity @p[nbt={Inventory:[{id:"minecraft:gold_ingot",Slot:9b}]}] run function corewars:system/import_gold
-execute if entity @p[nbt={Inventory:[{id:"minecraft:diamond",Slot:9b}]}] run function corewars:system/import_diamond
-execute if entity @p[nbt={Inventory:[{id:"minecraft:emerald",Slot:9b}]}] run function corewars:system/import_emerald
-execute if entity @p[nbt={Inventory:[{id:"minecraft:netherite_ingot",Slot:9b}]}] run function corewars:system/import_netherite
-item replace entity @a[nbt=!{Inventory:[{id:"minecraft:iron_ingot",Slot:9b},{id:"minecraft:gold_ingot",Slot:9b},{id:"minecraft:diamond",Slot:9b},{id:"minecraft:emerald",Slot:9b},{id:"minecraft:netherite_ingot",Slot:9b}]}] inventory.0 with light_blue_stained_glass_pane{display:{Name:'{"text":"Import materials","color":"white","italic":false}',Lore:['{"text":"Place here to import materials.","color":"gray","italic":false}']}} 1
-execute positioned as @a run execute store result score @p materials run clear @p light_blue_stained_glass_pane{display:{Name:'{"text":"Import materials","color":"white","italic":false}',Lore:['{"text":"Place here to import materials.","color":"gray","italic":false}']}} 0
-kill @e[type=item,nbt={Item:{id:"minecraft:light_blue_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":"Import materials","color":"white","italic":false}',Lore:['{"text":"Place here to import materials.","color":"gray","italic":false}']}}}}]
-clear @a[scores={materials=2..}] light_blue_stained_glass_pane{display:{Name:'{"text":"Import materials","color":"white","italic":false}',Lore:['{"text":"Place here to import materials.","color":"gray","italic":false}']}}
-
-execute if score old_mode settings matches 1 run enchant @a knockback 1
+#execute if score old_mode settings matches 1 run enchant @a knockback 1
 
 execute if score blue upgrade_haste matches 0 run effect clear @a[team=blue] haste
 execute if score red upgrade_haste matches 0 run effect clear @a[team=red] haste
@@ -284,3 +262,23 @@ execute as @a if score phase game matches 3..10 run function corewars:system/mai
 execute as @a store result score @s y_rotate run data get entity @s Pos[1] 1.0
 
 kill @a[tag=player,scores={y_rotate=..-64}]
+
+execute as @a store result score @s iron_mine run clear @s iron_ingot 0
+execute as @a store result score @s gold_mine run clear @s gold_ingot 0
+execute as @a store result score @s diamond_mine run clear @s diamond 0
+execute as @a store result score @s emerald_mine run clear @s emerald 0
+execute as @a store result score @s netherite_mine run clear @s netherite_ingot 0
+
+execute as @a if score @s iron_mined matches 1.. run give @s iron_ingot
+execute as @a if score @s iron_mined matches 1.. run scoreboard players remove @s iron_mined 1
+execute as @a if score @s gold_mined matches 1.. run give @s gold_ingot
+execute as @a if score @s gold_mined matches 1.. run scoreboard players remove @s gold_mined 1
+execute as @a if score @s diamond_mined matches 1.. run give @s diamond
+execute as @a if score @s diamond_mined matches 1.. run scoreboard players remove @s diamond_mined 1
+execute as @a if score @s emerald_mined matches 1.. run give @s emerald
+execute as @a if score @s emerald_mined matches 1.. run scoreboard players remove @s emerald_mined 1
+execute as @a if score @s netherite_mined matches 1.. run give @s netherite_ingot
+execute as @a if score @s netherite_mined matches 1.. run scoreboard players remove @s netherite_mined 1
+
+
+recipe take @a *

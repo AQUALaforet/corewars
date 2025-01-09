@@ -3,6 +3,8 @@ scoreboard objectives add open_enderchest minecraft.custom:minecraft.open_enderc
 scoreboard objectives add gold dummy
 scoreboard objectives add hit_damage minecraft.custom:minecraft.damage_taken
 
+scoreboard objectives add hp dummy "COREWARS"
+
 scoreboard objectives add Menu_1 dummy
 scoreboard objectives add Menu_2 dummy
 scoreboard objectives add Menu_3 dummy
@@ -359,7 +361,7 @@ bossbar add phase ""
 bossbar set phase color blue
 bossbar set autocore name "Auto Core damage"
 bossbar set autocore color red
-bossbar set autocore max 900
+bossbar set autocore max 800
 
 team add blue
 team add red
@@ -416,11 +418,16 @@ scoreboard players set @e[type=armor_stand,tag=diamond_generator] diamond_genera
 scoreboard players set @e[type=armor_stand,tag=emerald_generator] emerald_generator_cooldown 0
 scoreboard players set @e[type=armor_stand,tag=netherite_generator] netherite_generator_cooldown 0
 
-scoreboard objectives add iron_mine minecraft.mined:minecraft.iron_ore
-scoreboard objectives add gold_mine minecraft.mined:minecraft.gold_ore
-scoreboard objectives add diamond_mine minecraft.mined:minecraft.diamond_ore
-scoreboard objectives add emerald_mine minecraft.mined:minecraft.emerald_ore
-scoreboard objectives add netherite_mine minecraft.mined:minecraft.ancient_debris
+scoreboard objectives add iron_mine dummy
+scoreboard objectives add gold_mine dummy
+scoreboard objectives add diamond_mine dummy
+scoreboard objectives add emerald_mine dummy
+scoreboard objectives add netherite_mine dummy
+scoreboard objectives add iron_mined minecraft.mined:minecraft.iron_ore
+scoreboard objectives add gold_mined minecraft.mined:minecraft.gold_ore
+scoreboard objectives add diamond_mined minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add emerald_mined minecraft.mined:minecraft.emerald_ore
+scoreboard objectives add netherite_mined minecraft.mined:minecraft.ancient_debris
 
 scoreboard objectives add settings dummy
 execute unless score reset_settings settings matches 1 run function corewars:settings/reset_settings
@@ -468,3 +475,5 @@ scoreboard objectives add health health {"text":"\u2764","color":"red"}
 scoreboard objectives setdisplay belowName health
 
 tellraw @a {"text":"\u2714Successfully load datapack.","color":"green"}
+
+gamerule doLimitedCrafting true

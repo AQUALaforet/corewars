@@ -1,6 +1,6 @@
 bossbar set phase name "Phase 7 - Auto break core + Mid shop"
-scoreboard players set countdown game 24000
-scoreboard players set countdown_max game 24000
+scoreboard players set countdown game 12000
+scoreboard players set countdown_max game 12000
 execute if score Blue-Core hp matches 1.. run scoreboard players set Blue-Core hp 0
 execute if score Red-Core hp matches 1.. run scoreboard players set Red-Core hp 0
 execute if score Green-Core hp matches 1.. run scoreboard players set Green-Core hp 0
