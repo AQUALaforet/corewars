@@ -18,15 +18,15 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={potion_potion_8=1..,diamond_mine=20..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={potion_potion_9=1..,emerald_mine=10..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={potion_potion_1=1..,gold_mine=10..}] gold_mine 10
-scoreboard players remove @a[scores={potion_potion_2=1..,gold_mine=20..}] gold_mine 20
-scoreboard players remove @a[scores={potion_potion_3=1..,gold_mine=20..}] gold_mine 20
-scoreboard players remove @a[scores={potion_potion_4=1..,gold_mine=30..}] gold_mine 30
-scoreboard players remove @a[scores={potion_potion_5=1..,gold_mine=20..}] gold_mine 20
-scoreboard players remove @a[scores={potion_potion_6=1..,gold_mine=30..}] gold_mine 30
-scoreboard players remove @a[scores={potion_potion_7=1..,diamond_mine=10..}] diamond_mine 10
-scoreboard players remove @a[scores={potion_potion_8=1..,diamond_mine=20..}] diamond_mine 20
-scoreboard players remove @a[scores={potion_potion_9=1..,emerald_mine=10..}] emerald_mine 10
+clear @a[scores={potion_potion_1=1..,gold_mine=10..}] gold_ingot 10
+clear @a[scores={potion_potion_2=1..,gold_mine=20..}] gold_ingot 20
+clear @a[scores={potion_potion_3=1..,gold_mine=20..}] gold_ingot 20
+clear @a[scores={potion_potion_4=1..,gold_mine=30..}] gold_ingot 30
+clear @a[scores={potion_potion_5=1..,gold_mine=20..}] gold_ingot 20
+clear @a[scores={potion_potion_6=1..,gold_mine=30..}] gold_ingot 30
+clear @a[scores={potion_potion_7=1..,diamond_mine=10..}] diamond 10
+clear @a[scores={potion_potion_8=1..,diamond_mine=20..}] diamond 20
+clear @a[scores={potion_potion_9=1..,emerald_mine=10..}] emerald 10
 
 clear @a[scores={potion_potion_1=1..}] potion{display:{Lore:['{"text":"[Gold:10]","color":"gold","italic":false}']},Potion:"minecraft:regeneration"}
 clear @a[scores={potion_potion_2=1..}] potion{display:{Lore:['{"text":"[Gold:20]","color":"gold","italic":false}']},Potion:"minecraft:strong_regeneration"}

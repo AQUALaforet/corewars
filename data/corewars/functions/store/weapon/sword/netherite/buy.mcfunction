@@ -12,12 +12,12 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_sword_netherite_5=1..,netherite_mine=25..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_sword_netherite_6=1..,netherite_mine=35..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={weapon_sword_netherite_1=1..,netherite_mine=5..}] netherite_mine 5
-scoreboard players remove @a[scores={weapon_sword_netherite_2=1..,netherite_mine=10..}] netherite_mine 10
-scoreboard players remove @a[scores={weapon_sword_netherite_3=1..,netherite_mine=15..}] netherite_mine 15
-scoreboard players remove @a[scores={weapon_sword_netherite_4=1..,netherite_mine=20..}] netherite_mine 20
-scoreboard players remove @a[scores={weapon_sword_netherite_5=1..,netherite_mine=25..}] netherite_mine 25
-scoreboard players remove @a[scores={weapon_sword_netherite_6=1..,netherite_mine=35..}] netherite_mine 35
+clear @a[scores={weapon_sword_netherite_1=1..,netherite_mine=5..}] netherite_ingot 5
+clear @a[scores={weapon_sword_netherite_2=1..,netherite_mine=10..}] netherite_ingot 10
+clear @a[scores={weapon_sword_netherite_3=1..,netherite_mine=15..}] netherite_ingot 15
+clear @a[scores={weapon_sword_netherite_4=1..,netherite_mine=20..}] netherite_ingot 20
+clear @a[scores={weapon_sword_netherite_5=1..,netherite_mine=25..}] netherite_ingot 25
+clear @a[scores={weapon_sword_netherite_6=1..,netherite_mine=35..}] netherite_ingot 35
 
 clear @a[scores={weapon_sword_netherite_1=1..}] netherite_sword{display:{Lore:['{"text":"[Netherite:5]","color":"dark_gray","italic":false}']}}
 clear @a[scores={weapon_sword_netherite_2=1..}] netherite_sword{display:{Lore:['{"text":"[Netherite:10]","color":"dark_gray","italic":false}']},Enchantments:[{id:"minecraft:sharpness",lvl:1s}]}

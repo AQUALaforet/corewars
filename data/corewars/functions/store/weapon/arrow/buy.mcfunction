@@ -18,15 +18,15 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_arrow_8=1..,diamond_mine=4..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_arrow_9=1..,emerald_mine=4..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={weapon_arrow_1=1..,gold_mine=4..}] gold_mine 4
-scoreboard players remove @a[scores={weapon_arrow_2=1..,gold_mine=8..}] gold_mine 8
-scoreboard players remove @a[scores={weapon_arrow_3=1..,gold_mine=16..}] gold_mine 16
-scoreboard players remove @a[scores={weapon_arrow_4=1..,diamond_mine=4..}] diamond_mine 4
-scoreboard players remove @a[scores={weapon_arrow_5=1..,emerald_mine=4..}] emerald_mine 4
-scoreboard players remove @a[scores={weapon_arrow_6=1..,diamond_mine=4..}] diamond_mine 4
-scoreboard players remove @a[scores={weapon_arrow_7=1..,emerald_mine=4..}] emerald_mine 4
-scoreboard players remove @a[scores={weapon_arrow_8=1..,diamond_mine=4..}] diamond_mine 4
-scoreboard players remove @a[scores={weapon_arrow_9=1..,emerald_mine=4..}] demerald_mine 4
+clear @a[scores={weapon_arrow_1=1..,gold_mine=4..}] gold_ingot 4
+clear @a[scores={weapon_arrow_2=1..,gold_mine=8..}] gold_ingot 8
+clear @a[scores={weapon_arrow_3=1..,gold_mine=16..}] gold_ingot 16
+clear @a[scores={weapon_arrow_4=1..,diamond_mine=4..}] diamond 4
+clear @a[scores={weapon_arrow_5=1..,emerald_mine=4..}] emerald 4
+clear @a[scores={weapon_arrow_6=1..,diamond_mine=4..}] diamond 4
+clear @a[scores={weapon_arrow_7=1..,emerald_mine=4..}] emerald 4
+clear @a[scores={weapon_arrow_8=1..,diamond_mine=4..}] diamond 4
+clear @a[scores={weapon_arrow_9=1..,emerald_mine=4..}] emerald 4
 
 clear @a[scores={weapon_arrow_1=1..}] arrow{display:{Lore:['{"text":"[Gold:4]","color":"gold","italic":false}']}}
 clear @a[scores={weapon_arrow_2=1..}] arrow{display:{Lore:['{"text":"[Gold:8]","color":"gold","italic":false}']}}

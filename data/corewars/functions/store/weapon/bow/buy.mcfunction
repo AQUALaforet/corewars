@@ -18,15 +18,15 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_bow_8=1..,netherite_mine=35..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_bow_9=1..,diamond_mine=35..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={weapon_bow_1=1..,gold_mine=30..}] gold_mine 30
-scoreboard players remove @a[scores={weapon_bow_2=1..,gold_mine=50..}] gold_mine 50
-scoreboard players remove @a[scores={weapon_bow_3=1..,diamond_mine=25..}] diamond_mine 25
-scoreboard players remove @a[scores={weapon_bow_4=1..,diamond_mine=40..}] diamond_mine 40
-scoreboard players remove @a[scores={weapon_bow_5=1..,emerald_mine=30..}] emerald_mine 30
-scoreboard players remove @a[scores={weapon_bow_6=1..,netherite_mine=20..}] netherite_mine 20
-scoreboard players remove @a[scores={weapon_bow_7=1..,emerald_mine=40..}] emerald_mine 40
-scoreboard players remove @a[scores={weapon_bow_8=1..,netherite_mine=35..}] netherite_mine 35
-scoreboard players remove @a[scores={weapon_bow_9=1..,diamond_mine=35..}] diamond_mine 35
+clear @a[scores={weapon_bow_1=1..,gold_mine=30..}] gold_ingot 30
+clear @a[scores={weapon_bow_2=1..,gold_mine=50..}] gold_ingot 50
+clear @a[scores={weapon_bow_3=1..,diamond_mine=25..}] diamond 25
+clear @a[scores={weapon_bow_4=1..,diamond_mine=40..}] diamond 40
+clear @a[scores={weapon_bow_5=1..,emerald_mine=30..}] emerald 30
+clear @a[scores={weapon_bow_6=1..,netherite_mine=20..}] netherite_ingot 20
+clear @a[scores={weapon_bow_7=1..,emerald_mine=40..}] emerald 40
+clear @a[scores={weapon_bow_8=1..,netherite_mine=35..}] netherite_ingot 35
+clear @a[scores={weapon_bow_9=1..,diamond_mine=35..}] diamond 35
 
 clear @a[scores={weapon_bow_1=1..}] bow{display:{Lore:['{"text":"[Gold:30]","color":"gold","italic":false}']}}
 clear @a[scores={weapon_bow_2=1..}] bow{display:{Lore:['{"text":"[Gold:50]","color":"gold","italic":false}']},Enchantments:[{id:"minecraft:power",lvl:1s}]}

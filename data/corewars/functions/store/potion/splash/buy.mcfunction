@@ -18,15 +18,15 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={potion_splash_8=1..,emerald_mine=10..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={potion_splash_9=1..,diamond_mine=15..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={potion_splash_1=1..,gold_mine=10..}] gold_mine 10
-scoreboard players remove @a[scores={potion_splash_2=1..,gold_mine=20..}] gold_mine 20
-scoreboard players remove @a[scores={potion_splash_3=1..,gold_mine=15..}] gold_mine 15
-scoreboard players remove @a[scores={potion_splash_4=1..,gold_mine=25..}] gold_mine 25
-scoreboard players remove @a[scores={potion_splash_5=1..,diamond_mine=10..}] diamond_mine 10
-scoreboard players remove @a[scores={potion_splash_6=1..,emerald_mine=10..}] gold_mine 10
-scoreboard players remove @a[scores={potion_splash_7=1..,diamond_mine=10..}] diamond_mine 10
-scoreboard players remove @a[scores={potion_splash_8=1..,emerald_mine=10..}] gold_mine 10
-scoreboard players remove @a[scores={potion_splash_9=1..,diamond_mine=15..}] diamond_mine 15
+clear @a[scores={potion_splash_1=1..,gold_mine=10..}] gold_ingot 10
+clear @a[scores={potion_splash_2=1..,gold_mine=20..}] gold_ingot 20
+clear @a[scores={potion_splash_3=1..,gold_mine=15..}] gold_ingot 15
+clear @a[scores={potion_splash_4=1..,gold_mine=25..}] gold_ingot 25
+clear @a[scores={potion_splash_5=1..,diamond_mine=10..}] diamond 10
+clear @a[scores={potion_splash_6=1..,emerald_mine=10..}] gold_ingot 10
+clear @a[scores={potion_splash_7=1..,diamond_mine=10..}] diamond 10
+clear @a[scores={potion_splash_8=1..,emerald_mine=10..}] gold_ingot 10
+clear @a[scores={potion_splash_9=1..,diamond_mine=15..}] diamond 15
 
 clear @a[scores={potion_splash_1=1..}] splash_potion{display:{Lore:['{"text":"[Gold:10]","color":"gold","italic":false}']},Potion:"minecraft:healing"}
 clear @a[scores={potion_splash_2=1..}] splash_potion{display:{Lore:['{"text":"[Gold:20]","color":"gold","italic":false}']},Potion:"minecraft:strong_healing"}

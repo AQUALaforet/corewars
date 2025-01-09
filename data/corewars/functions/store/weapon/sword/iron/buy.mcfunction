@@ -12,12 +12,12 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_sword_iron_5=1..,diamond_mine=15..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_sword_iron_6=1..,diamond_mine=20..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={weapon_sword_iron_1=1..,gold_mine=35..}] gold_mine 35
-scoreboard players remove @a[scores={weapon_sword_iron_2=1..,gold_mine=55..}] gold_mine 55
-scoreboard players remove @a[scores={weapon_sword_iron_3=1..,gold_mine=70..}] gold_mine 70
-scoreboard players remove @a[scores={weapon_sword_iron_4=1..,diamond_mine=10..}] diamond_mine 10
-scoreboard players remove @a[scores={weapon_sword_iron_5=1..,diamond_mine=15..}] diamond_mine 15
-scoreboard players remove @a[scores={weapon_sword_iron_6=1..,diamond_mine=20..}] diamond_mine 20
+clear @a[scores={weapon_sword_iron_1=1..,gold_mine=35..}] gold_ingot 35
+clear @a[scores={weapon_sword_iron_2=1..,gold_mine=55..}] gold_ingot 55
+clear @a[scores={weapon_sword_iron_3=1..,gold_mine=70..}] gold_ingot 70
+clear @a[scores={weapon_sword_iron_4=1..,diamond_mine=10..}] diamond 10
+clear @a[scores={weapon_sword_iron_5=1..,diamond_mine=15..}] diamond 15
+clear @a[scores={weapon_sword_iron_6=1..,diamond_mine=20..}] diamond 20
 
 clear @a[scores={weapon_sword_iron_1=1..}] iron_sword{display:{Lore:['{"text":"[Gold:35]","color":"gold","italic":false}']}}
 clear @a[scores={weapon_sword_iron_2=1..}] iron_sword{display:{Lore:['{"text":"[Gold:55]","color":"gold","italic":false}']},Enchantments:[{id:"minecraft:sharpness",lvl:1s}]}

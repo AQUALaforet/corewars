@@ -11,7 +11,7 @@ execute positioned as @a run playsound block.dispenser.dispense block @a[scores=
 execute positioned as @a run playsound block.dispenser.dispense block @a[scores={weapon_home_4=1..}] ~ ~ ~ 1 1
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_home_5=1..,gold_mine=15..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={weapon_home_5=1..,gold_mine=15..}] gold_mine 15
+clear @a[scores={weapon_home_5=1..,gold_mine=15..}] gold_ingot 15
 #page_0 アイテム削除
 clear @a[scores={weapon_home_1=1..}] iron_sword{display:{Lore:['{"text":"Open sword page.","color":"gray","italic":false}']}}
 clear @a[scores={weapon_home_2=1..}] bow{display:{Lore:['{"text":"Open bow page.","color":"gray","italic":false}']}}

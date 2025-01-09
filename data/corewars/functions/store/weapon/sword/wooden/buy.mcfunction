@@ -12,11 +12,11 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_sword_wooden_5=1..,iron_mine=50..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={weapon_sword_wooden_6=1..,iron_mine=60..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={weapon_sword_wooden_2=1..,iron_mine=20..}] iron_mine 20
-scoreboard players remove @a[scores={weapon_sword_wooden_3=1..,iron_mine=30..}] iron_mine 30
-scoreboard players remove @a[scores={weapon_sword_wooden_4=1..,iron_mine=40..}] iron_mine 40
-scoreboard players remove @a[scores={weapon_sword_wooden_5=1..,iron_mine=50..}] iron_mine 50
-scoreboard players remove @a[scores={weapon_sword_wooden_6=1..,iron_mine=60..}] iron_mine 60
+clear @a[scores={weapon_sword_wooden_2=1..,iron_mine=20..}] iron_ingot 20
+clear @a[scores={weapon_sword_wooden_3=1..,iron_mine=30..}] iron_ingot 30
+clear @a[scores={weapon_sword_wooden_4=1..,iron_mine=40..}] iron_ingot 40
+clear @a[scores={weapon_sword_wooden_5=1..,iron_mine=50..}] iron_ingot 50
+clear @a[scores={weapon_sword_wooden_6=1..,iron_mine=60..}] iron_ingot 60
 
 clear @a[scores={weapon_sword_wooden_1=1..}] wooden_sword{display:{Lore:['{"text":"[Iron:0]","color":"white","italic":false}']}}
 clear @a[scores={weapon_sword_wooden_2=1..}] wooden_sword{display:{Lore:['{"text":"[Iron:20]","color":"white","italic":false}']},Enchantments:[{id:"minecraft:sharpness",lvl:1s}]}
