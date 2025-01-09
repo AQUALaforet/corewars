@@ -10,11 +10,11 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_boots_diamond_4=1..,emerald_mine=14..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_boots_diamond_5=1..,emerald_mine=24..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={armor_boots_diamond_1=1..,diamond_mine=19..}] diamond_mine 19
-scoreboard players remove @a[scores={armor_boots_diamond_2=1..,diamond_mine=29..}] diamond_mine 29
-scoreboard players remove @a[scores={armor_boots_diamond_3=1..,emerald_mine=4..}] emerald_mine 4
-scoreboard players remove @a[scores={armor_boots_diamond_4=1..,emerald_mine=14..}] emerald_mine 14
-scoreboard players remove @a[scores={armor_boots_diamond_5=1..,emerald_mine=24..}] emerald_mine 24
+clear @a[scores={armor_boots_diamond_1=1..,diamond_mine=19..}] diamond 19
+clear @a[scores={armor_boots_diamond_2=1..,diamond_mine=29..}] diamond 29
+clear @a[scores={armor_boots_diamond_3=1..,emerald_mine=4..}] emerald 4
+clear @a[scores={armor_boots_diamond_4=1..,emerald_mine=14..}] emerald 14
+clear @a[scores={armor_boots_diamond_5=1..,emerald_mine=24..}] emerald 24
 
 clear @a[scores={armor_boots_diamond_1=1..}] diamond_boots{display:{Lore:['{"text":"[Diamond:19]","color":"aqua","italic":false}']},}
 clear @a[scores={armor_boots_diamond_2=1..}] diamond_boots{display:{Lore:['{"text":"[Diamond:29]","color":"aqua","italic":false}']},Enchantments:[{id:"minecraft:protection",lvl:1s}]}

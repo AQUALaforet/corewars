@@ -10,10 +10,10 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_boots_leather_4=1..,iron_mine=34..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_boots_leather_5=1..,iron_mine=44..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={armor_boots_leather_2=1..,iron_mine=14..}] iron_mine 14
-scoreboard players remove @a[scores={armor_boots_leather_3=1..,iron_mine=24..}] iron_mine 24
-scoreboard players remove @a[scores={armor_boots_leather_4=1..,iron_mine=34..}] iron_mine 34
-scoreboard players remove @a[scores={armor_boots_leather_5=1..,iron_mine=44..}] iron_mine 44
+clear @a[scores={armor_boots_leather_2=1..,iron_mine=14..}] iron_ingot 14
+clear @a[scores={armor_boots_leather_3=1..,iron_mine=24..}] iron_ingot 24
+clear @a[scores={armor_boots_leather_4=1..,iron_mine=34..}] iron_ingot 34
+clear @a[scores={armor_boots_leather_5=1..,iron_mine=44..}] iron_ingot 44
 
 clear @a[scores={armor_boots_leather_1=1..}] leather_boots{display:{Lore:['{"text":"[Iron:0]","color":"white","italic":false}']},}
 clear @a[scores={armor_boots_leather_2=1..}] leather_boots{display:{Lore:['{"text":"[Iron:14]","color":"white","italic":false}']},Enchantments:[{id:"minecraft:protection",lvl:1s}]}

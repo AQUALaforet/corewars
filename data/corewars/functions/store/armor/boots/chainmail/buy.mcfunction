@@ -10,11 +10,11 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_boots_chainmail_4=1..,gold_mine=24..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_boots_chainmail_5=1..,gold_mine=34..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={armor_boots_chainmail_1=1..,iron_mine=34..}] iron_mine 34
-scoreboard players remove @a[scores={armor_boots_chainmail_2=1..,iron_mine=44..}] iron_mine 44
-scoreboard players remove @a[scores={armor_boots_chainmail_3=1..,gold_mine=14..}] gold_mine 14
-scoreboard players remove @a[scores={armor_boots_chainmail_4=1..,gold_mine=24..}] gold_mine 24
-scoreboard players remove @a[scores={armor_boots_chainmail_5=1..,gold_mine=34..}] gold_mine 34
+clear @a[scores={armor_boots_chainmail_1=1..,iron_mine=34..}] iron_ingot 34
+clear @a[scores={armor_boots_chainmail_2=1..,iron_mine=44..}] iron_ingot 44
+clear @a[scores={armor_boots_chainmail_3=1..,gold_mine=14..}] gold_ingot 14
+clear @a[scores={armor_boots_chainmail_4=1..,gold_mine=24..}] gold_ingot 24
+clear @a[scores={armor_boots_chainmail_5=1..,gold_mine=34..}] gold_ingot 34
 
 clear @a[scores={armor_boots_chainmail_1=1..}] chainmail_boots{display:{Lore:['{"text":"[Iron:34]","color":"white","italic":false}']},}
 clear @a[scores={armor_boots_chainmail_2=1..}] chainmail_boots{display:{Lore:['{"text":"[Iron:44]","color":"white","italic":false}']},Enchantments:[{id:"minecraft:protection",lvl:1s}]}

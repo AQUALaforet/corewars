@@ -10,10 +10,10 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_leggings_leather_4=1..,iron_mine=36..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_leggings_leather_5=1..,iron_mine=46..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={armor_leggings_leather_2=1..,iron_mine=16..}] iron_mine 16
-scoreboard players remove @a[scores={armor_leggings_leather_3=1..,iron_mine=26..}] iron_mine 26
-scoreboard players remove @a[scores={armor_leggings_leather_4=1..,iron_mine=36..}] iron_mine 36
-scoreboard players remove @a[scores={armor_leggings_leather_5=1..,iron_mine=46..}] iron_mine 46
+clear @a[scores={armor_leggings_leather_2=1..,iron_mine=16..}] iron_ingot 16
+clear @a[scores={armor_leggings_leather_3=1..,iron_mine=26..}] iron_ingot 26
+clear @a[scores={armor_leggings_leather_4=1..,iron_mine=36..}] iron_ingot 36
+clear @a[scores={armor_leggings_leather_5=1..,iron_mine=46..}] iron_ingot 46
 
 clear @a[scores={armor_leggings_leather_1=1..}] leather_leggings{display:{Lore:['{"text":"[Iron:0]","color":"white","italic":false}']},}
 clear @a[scores={armor_leggings_leather_2=1..}] leather_leggings{display:{Lore:['{"text":"[Iron:16]","color":"white","italic":false}']},Enchantments:[{id:"minecraft:protection",lvl:1s}]}

@@ -10,11 +10,11 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_chestplate_diamond_4=1..,emerald_mine=30..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_chestplate_diamond_5=1..,emerald_mine=40..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={armor_chestplate_diamond_1=1..,diamond_mine=25..}] diamond_mine 25
-scoreboard players remove @a[scores={armor_chestplate_diamond_2=1..,diamond_mine=35..}] diamond_mine 35
-scoreboard players remove @a[scores={armor_chestplate_diamond_3=1..,emerald_mine=20..}] emerald_mine 20
-scoreboard players remove @a[scores={armor_chestplate_diamond_4=1..,emerald_mine=30..}] emerald_mine 30
-scoreboard players remove @a[scores={armor_chestplate_diamond_5=1..,emerald_mine=40..}] emerald_mine 40
+clear @a[scores={armor_chestplate_diamond_1=1..,diamond_mine=25..}] diamond 25
+clear @a[scores={armor_chestplate_diamond_2=1..,diamond_mine=35..}] diamond 35
+clear @a[scores={armor_chestplate_diamond_3=1..,emerald_mine=20..}] emerald 20
+clear @a[scores={armor_chestplate_diamond_4=1..,emerald_mine=30..}] emerald 30
+clear @a[scores={armor_chestplate_diamond_5=1..,emerald_mine=40..}] emerald 40
 
 clear @a[scores={armor_chestplate_diamond_1=1..}] diamond_chestplate{display:{Lore:['{"text":"[Diamond:25]","color":"aqua","italic":false}']},}
 clear @a[scores={armor_chestplate_diamond_2=1..}] diamond_chestplate{display:{Lore:['{"text":"[Diamond:35]","color":"aqua","italic":false}']},Enchantments:[{id:"minecraft:protection",lvl:1s}]}

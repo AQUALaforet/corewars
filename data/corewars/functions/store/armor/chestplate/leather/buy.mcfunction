@@ -10,10 +10,10 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_chestplate_leather_4=1..,iron_mine=40..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_chestplate_leather_5=1..,iron_mine=50..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={armor_chestplate_leather_2=1..,iron_mine=20..}] iron_mine 20
-scoreboard players remove @a[scores={armor_chestplate_leather_3=1..,iron_mine=30..}] iron_mine 30
-scoreboard players remove @a[scores={armor_chestplate_leather_4=1..,iron_mine=40..}] iron_mine 40
-scoreboard players remove @a[scores={armor_chestplate_leather_5=1..,iron_mine=50..}] iron_mine 50
+clear @a[scores={armor_chestplate_leather_2=1..,iron_mine=20..}] iron_ingot 20
+clear @a[scores={armor_chestplate_leather_3=1..,iron_mine=30..}] iron_ingot 30
+clear @a[scores={armor_chestplate_leather_4=1..,iron_mine=40..}] iron_ingot 40
+clear @a[scores={armor_chestplate_leather_5=1..,iron_mine=50..}] iron_ingot 50
 
 clear @a[scores={armor_chestplate_leather_1=1..}] leather_chestplate{display:{Lore:['{"text":"[Iron:0]","color":"white","italic":false}']},}
 clear @a[scores={armor_chestplate_leather_2=1..}] leather_chestplate{display:{Lore:['{"text":"[Iron:20]","color":"white","italic":false}']},Enchantments:[{id:"minecraft:protection",lvl:1s}]}

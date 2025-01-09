@@ -18,15 +18,15 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={food_8=1..,diamond_mine=1..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={food_9=1..,emerald_mine=1..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={food_1=1..,iron_mine=6..}] iron_mine 6
-scoreboard players remove @a[scores={food_2=1..,iron_mine=6..}] iron_mine 6
-scoreboard players remove @a[scores={food_3=1..,iron_mine=8..}] iron_mine 8
-scoreboard players remove @a[scores={food_4=1..,iron_mine=12..}] iron_mine 12
-scoreboard players remove @a[scores={food_5=1..,gold_mine=2..}] gold_mine 2
-scoreboard players remove @a[scores={food_6=1..,gold_mine=4..}] gold_mine 4
-scoreboard players remove @a[scores={food_7=1..,gold_mine=4..}] gold_mine 4
-scoreboard players remove @a[scores={food_8=1..,diamond_mine=1..}] diamond_mine 1
-scoreboard players remove @a[scores={food_9=1..,emerald_mine=1..}] emerald_mine 1
+clear @a[scores={food_1=1..,iron_mine=6..}] iron_ingot 6
+clear @a[scores={food_2=1..,iron_mine=6..}] iron_ingot 6
+clear @a[scores={food_3=1..,iron_mine=8..}] iron_ingot 8
+clear @a[scores={food_4=1..,iron_mine=12..}] iron_ingot 12
+clear @a[scores={food_5=1..,gold_mine=2..}] gold_ingot 2
+clear @a[scores={food_6=1..,gold_mine=4..}] gold_ingot 4
+clear @a[scores={food_7=1..,gold_mine=4..}] gold_ingot 4
+clear @a[scores={food_8=1..,diamond_mine=1..}] diamond 1
+clear @a[scores={food_9=1..,emerald_mine=1..}] emerald 1
 
 clear @a[scores={food_1=1..}] tropical_fish{display:{Lore:['{"text":"[Iron:6]","color":"white","italic":false}']}}
 clear @a[scores={food_2=1..}] cookie{display:{Lore:['{"text":"[Iron:6]","color":"white","italic":false}']}}

@@ -10,11 +10,11 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_leggings_netherite_4=1..,netherite_mine=21..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_leggings_netherite_5=1..,netherite_mine=26..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={armor_leggings_netherite_1=1..,netherite_mine=6..}] netherite_mine 6
-scoreboard players remove @a[scores={armor_leggings_netherite_2=1..,netherite_mine=11..}] netherite_mine 11
-scoreboard players remove @a[scores={armor_leggings_netherite_3=1..,netherite_mine=16..}] netherite_mine 16
-scoreboard players remove @a[scores={armor_leggings_netherite_4=1..,netherite_mine=21..}] netherite_mine 21
-scoreboard players remove @a[scores={armor_leggings_netherite_5=1..,netherite_mine=26..}] netherite_mine 26
+clear @a[scores={armor_leggings_netherite_1=1..,netherite_mine=6..}] netherite_ingot 6
+clear @a[scores={armor_leggings_netherite_2=1..,netherite_mine=11..}] netherite_ingot 11
+clear @a[scores={armor_leggings_netherite_3=1..,netherite_mine=16..}] netherite_ingot 16
+clear @a[scores={armor_leggings_netherite_4=1..,netherite_mine=21..}] netherite_ingot 21
+clear @a[scores={armor_leggings_netherite_5=1..,netherite_mine=26..}] netherite_ingot 26
 
 clear @a[scores={armor_leggings_netherite_1=1..}] netherite_leggings{display:{Lore:['{"text":"[Netherite:6]","color":"dark_gray","italic":false}']}}
 clear @a[scores={armor_leggings_netherite_2=1..}] netherite_leggings{display:{Lore:['{"text":"[Netherite:11]","color":"dark_gray","italic":false}']},Enchantments:[{id:"minecraft:protection",lvl:1s}]}

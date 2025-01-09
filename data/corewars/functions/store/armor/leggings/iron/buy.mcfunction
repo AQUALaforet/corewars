@@ -10,11 +10,11 @@ execute positioned as @a run playsound minecraft:block.note_block.pling block @a
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_leggings_iron_4=1..,diamond_mine=15..}] ~ ~ ~ 1 2
 execute positioned as @a run playsound minecraft:block.note_block.pling block @a[scores={armor_leggings_iron_5=1..,diamond_mine=25..}] ~ ~ ~ 1 2
 
-scoreboard players remove @a[scores={armor_leggings_iron_2=1..,gold_mine=21..}] gold_mine 21
-scoreboard players remove @a[scores={armor_leggings_iron_2=1..,gold_mine=31..}] gold_mine 31
-scoreboard players remove @a[scores={armor_leggings_iron_3=1..,gold_mine=41..}] gold_mine 41
-scoreboard players remove @a[scores={armor_leggings_iron_4=1..,diamond_mine=11..}] diamond_mine 11
-scoreboard players remove @a[scores={armor_leggings_iron_5=1..,diamond_mine=21..}] diamond_mine 21
+clear @a[scores={armor_leggings_iron_2=1..,gold_mine=21..}] gold_ingot 21
+clear @a[scores={armor_leggings_iron_2=1..,gold_mine=31..}] gold_ingot 31
+clear @a[scores={armor_leggings_iron_3=1..,gold_mine=41..}] gold_ingot 41
+clear @a[scores={armor_leggings_iron_4=1..,diamond_mine=11..}] diamond 11
+clear @a[scores={armor_leggings_iron_5=1..,diamond_mine=21..}] diamond 21
 
 clear @a[scores={armor_leggings_iron_1=1..}] iron_leggings{display:{Lore:['{"text":"[Gold:21]","color":"gold","italic":false}']},}
 clear @a[scores={armor_leggings_iron_2=1..}] iron_leggings{display:{Lore:['{"text":"[Gold:31]","color":"gold","italic":false}']},Enchantments:[{id:"minecraft:protection",lvl:1s}]}
