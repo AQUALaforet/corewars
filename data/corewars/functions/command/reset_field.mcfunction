@@ -49,3 +49,4 @@ execute if score phase game matches 2..10 run scoreboard players add Gray-Core h
 execute if score phase game matches 2..10 run scoreboard players add Aqua-Core hp 1
 execute if score phase game matches 2..10 run scoreboard players add Pink-Core hp 1
 tellraw @s {"text":"\u2714Successfully reset field.","color":"green"}
+worldborder set 300
