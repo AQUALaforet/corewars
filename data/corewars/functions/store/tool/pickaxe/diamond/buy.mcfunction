@@ -24,4 +24,4 @@ clear @a[scores={tool_pickaxe_diamond_2=1..}] diamond_pickaxe{display:{Lore:['{"
 clear @a[scores={tool_pickaxe_diamond_3=1..}] diamond_pickaxe{display:{Lore:['{"text":"[Diamond:30]","color":"aqua","italic":false}']},Enchantments:[{id:"minecraft:efficiency",lvl:2s}]}
 clear @a[scores={tool_pickaxe_diamond_4=1..}] diamond_pickaxe{display:{Lore:['{"text":"[Emerald:15]","color":"green","italic":false}']},Enchantments:[{id:"minecraft:efficiency",lvl:3s}]}
 clear @a[scores={tool_pickaxe_diamond_5=1..}] diamond_pickaxe{display:{Lore:['{"text":"[Emerald:25]","color":"green","italic":false}']},Enchantments:[{id:"minecraft:efficiency",lvl:4s}]}
-clear @a[scores={tool_pickaxe_diamond_6=1..}] diamond_pickaxe{display:{Lore:['{"text":"[Emerald:35]","color":"green","italic":false}']},Enchantments:[{id:"minecraft:efficiency",lvl:5s}]} 
+clear @a[scores={tool_pickaxe_diamond_6=1..}] diamond_pickaxe{display:{Lore:['{"text":"[Emerald:35]","color":"green","italic":false}']},Enchantments:[{id:"minecraft:efficiency",lvl:5s}]}
