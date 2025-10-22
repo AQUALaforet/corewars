@@ -1,5 +1,0 @@
-execute positioned as @e[type=armor_stand,tag=gold_generator,scores={gold_generator_cooldown=..0}] unless block ~ ~ ~ gold_ore run setblock ~ ~ ~ bedrock
-execute if score phase game matches 1..4 run execute positioned as @e[type=armor_stand,tag=gold_generator,scores={gold_generator_cooldown=..0}] unless block ~ ~ ~ gold_ore run scoreboard players operation @e[type=armor_stand,tag=gold_generator,scores={gold_generator_cooldown=..0},limit=1,sort=nearest] gold_generator_cooldown = gold_generator_cooldown_p1 settings
-execute if score phase game matches 5.. run execute positioned as @e[type=armor_stand,tag=gold_generator,scores={gold_generator_cooldown=..0}] unless block ~ ~ ~ gold_ore run scoreboard players operation @e[type=armor_stand,tag=gold_generator,scores={gold_generator_cooldown=..0},limit=1,sort=nearest] gold_generator_cooldown = gold_generator_cooldown_p2 settings
-scoreboard players remove @e[type=armor_stand,tag=gold_generator,scores={gold_generator_cooldown=1..}] gold_generator_cooldown 1
-execute positioned as @e[type=armor_stand,tag=gold_generator,scores={gold_generator_cooldown=..0}] run setblock ~ ~ ~ gold_ore

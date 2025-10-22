@@ -1,0 +1,5 @@
+execute positioned as @e[type=armor_stand,tag=iron_generator,scores={iron_generator_cooldown=..0}] unless block ~ ~ ~ iron_ore run setblock ~ ~ ~ bedrock
+execute if score phase game matches 1..2 run execute positioned as @e[type=armor_stand,tag=iron_generator,scores={iron_generator_cooldown=..0}] unless block ~ ~ ~ iron_ore run scoreboard players operation @e[type=armor_stand,tag=iron_generator,scores={iron_generator_cooldown=..0},limit=1,sort=nearest] iron_generator_cooldown = iron_generator_cooldown_p1 settings
+execute if score phase game matches 3.. run execute positioned as @e[type=armor_stand,tag=iron_generator,scores={iron_generator_cooldown=..0}] unless block ~ ~ ~ iron_ore run scoreboard players operation @e[type=armor_stand,tag=iron_generator,scores={iron_generator_cooldown=..0},limit=1,sort=nearest] iron_generator_cooldown = iron_generator_cooldown_p2 settings
+scoreboard players remove @e[type=armor_stand,tag=iron_generator,scores={iron_generator_cooldown=1..}] iron_generator_cooldown 1
+execute positioned as @e[type=armor_stand,tag=iron_generator,scores={iron_generator_cooldown=..0}] run setblock ~ ~ ~ iron_ore

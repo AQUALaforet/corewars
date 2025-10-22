@@ -1,0 +1,1 @@
+execute store result score Sound rng run random value 0..10

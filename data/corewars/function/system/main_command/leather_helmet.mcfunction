@@ -1,0 +1,8 @@
+item replace entity @s[team=blue] armor.head with leather_helmet[dyed_color=255,unbreakable={},enchantments={"binding_curse":1,"vanishing_curse":1},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s[team=red] armor.head with leather_helmet[dyed_color=16711680,unbreakable={},enchantments={"binding_curse":1,"vanishing_curse":1},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s[team=green] armor.head with leather_helmet[dyed_color=32768,unbreakable={},enchantments={"binding_curse":1,"vanishing_curse":1},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s[team=yellow] armor.head with leather_helmet[dyed_color=16776960,unbreakable={},enchantments={"binding_curse":1,"vanishing_curse":1},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s[team=white] armor.head with leather_helmet[dyed_color=16777215,unbreakable={},enchantments={"binding_curse":1,"vanishing_curse":1},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s[team=gray] armor.head with leather_helmet[dyed_color=8421504,unbreakable={},enchantments={"binding_curse":1,"vanishing_curse":1},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s[team=pink] armor.head with leather_helmet[dyed_color=16738740,unbreakable={},enchantments={"binding_curse":1,"vanishing_curse":1},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s[team=aqua] armor.head with leather_helmet[dyed_color=65535,unbreakable={},enchantments={"binding_curse":1,"vanishing_curse":1},tooltip_display={hide_tooltip:true}] 1

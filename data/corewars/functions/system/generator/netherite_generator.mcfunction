@@ -1,5 +1,0 @@
-execute positioned as @e[type=armor_stand,tag=netherite_generator,scores={netherite_generator_cooldown=..0}] unless block ~ ~ ~ ancient_debris run setblock ~ ~ ~ bedrock
-execute positioned as @e[type=armor_stand,tag=netherite_generator,scores={netherite_generator_cooldown=1..}] run setblock ~ ~ ~ bedrock
-execute positioned as @e[type=armor_stand,tag=netherite_generator,scores={netherite_generator_cooldown=..0}] unless block ~ ~ ~ ancient_debris run scoreboard players operation @e[type=armor_stand,tag=netherite_generator,scores={netherite_generator_cooldown=..0},limit=1,sort=nearest] netherite_generator_cooldown = netherite_generator_cooldown settings
-scoreboard players remove @e[type=armor_stand,tag=netherite_generator,scores={netherite_generator_cooldown=1..}] netherite_generator_cooldown 1
-execute positioned as @e[type=armor_stand,tag=netherite_generator,scores={netherite_generator_cooldown=..0}] run setblock ~ ~ ~ ancient_debris
